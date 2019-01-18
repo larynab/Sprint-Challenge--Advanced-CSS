@@ -167,14 +167,12 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 120px;
-  width: 590px;
-  margin-left: 333px;
-  margin-right: 353px;
-  border-left-width: 5px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 429px;
+  padding-right: 431px;
+  background-color: #fdfcf3;
 }
 @media (max-width: 500px) {
   nav {
@@ -193,6 +191,7 @@ nav h1 {
   margin-right: 0px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 25px;
 }
 @media (max-width: 500px) {
   nav h1 {
@@ -220,6 +219,9 @@ footer {
 }
 .home .intro img {
   width: 99%;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -238,6 +240,21 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  .home .space-images .blast {
+    width: 99%;
+  }
+  .home .space-images .sky {
+    visibility: hidden;
+  }
+  .home .space-images .launch {
+    visibility: hidden;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -254,8 +271,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 99%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 99%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -283,9 +313,28 @@ footer {
   background-color: white;
   color: black;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 446px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 69px;
+    padding-left: 179px;
+    padding-right: 185px;
+    padding-top: 21px;
+    padding-bottom: 15px;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 99%;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
